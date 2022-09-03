@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>ПОЧТА</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header_row">
+                <a href=".#"> <img class="logo" src="./images/icons/logo.svg" alt="logo"></a>
+                <a href=".#" class="none" id="logout_a">Logout</a>
+                <a href=".#" class="" id="login_a">Login</a>
+        </div>
+    </div>
+    <div class="login_container">
+        <div class="login_row">
+            <form class="login_form" action=".#">
+                <h1>Login</h1>
+                <h4>Go to e-mail</h4>
+                <br>
+                <input class="login_input" type="text" value="" placeholder="Type your login here"><br>
+                <input class="login_input" type="password" value="" placeholder="Type your password here"><br>
+                <button class="login_btn" type="submit">Log in</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container none">
+        <div class="container_row">
+            <div class="container_sort">
+                <ul>
+                    <li><a href=".#">all mails</a></li>
+                    <li><a href=".#">readed</a></li>
+                    <li><a href=".#">unreaded</a></li>
+                </ul>
+                <button id="send_msg_form">SEND MSG</button>
+            </div>
+            <div class="mails">
+                <ul>
+                    <li><a href=".#">message 1</a></li>
+                    <li><a href=".#">message 2</a></li>
+                </ul>
+            </div>
+            <div class="message">
+                <h1>MESSAGE</h1>
+                <div class="text_message">
+                    <p id="text_message">The entire text of the message</p>
+                </div>
+                    <div class="message_icons">
+                        <button id="remove"><img src="./images/icons/mail_remove.svg" alt="remove_icon" width="30px"></button>
+                        <button id="send"><img src="./images/icons/mail_send.svg" alt="send_icon" width="30px"></button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="send_message none">
+        <button id="close_send_form">Close</button>
+        <div class="sended"></div>
+        <form action="" class="send_form">    
+            <input type="text" name="" id="title_send_msg" placeholder="Type message title"><br>
+            <textarea name="" id="msg_send_text" cols="30" rows="10" placeholder="Type message text"></textarea><br>
+            <button id="send_send_form">Send</button>
+            
+        </form>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
