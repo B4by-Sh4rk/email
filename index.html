@@ -21,8 +21,8 @@
                 <h1>Login</h1>
                 <h4>Go to e-mail</h4>
                 <br>
-                <input class="login_input" type="text" value="" placeholder="Type your login here"><br>
-                <input class="login_input" type="password" value="" placeholder="Type your password here"><br>
+                <input id="form_input_login" class="login_input" type="text" value="" placeholder="Type your login here"><br>
+                <input id="form_input_password" class="login_input" type="password" value="" placeholder="Type your password here"><br>
                 <button class="login_btn" type="submit">Log in</button>
             </form>
         </div>
@@ -31,23 +31,21 @@
     <div class="container none">
         <div class="container_row">
             <div class="container_sort">
-                <ul>
-                    <li><a href=".#">all mails</a></li>
-                    <li><a href=".#">readed</a></li>
-                    <li><a href=".#">unreaded</a></li>
+               <ul class="none">
+                    <li><a href="javascript:void(0)">all mails</a></li>
+                    <li><a href="javascript:void(0)">readed</a></li>
+                    <li><a href="javascript:void(0)">unreaded</a></li>
                 </ul>
                 <button id="send_msg_form">SEND MSG</button>
             </div>
             <div class="mails">
-                <ul>
-                    <li><a href=".#">message 1</a></li>
-                    <li><a href=".#">message 2</a></li>
+                <ul class="msg_list">
                 </ul>
             </div>
             <div class="message">
-                <h1>MESSAGE</h1>
+                <h1 id="title_message">MESSAGE</h1>
                 <div class="text_message">
-                    <p id="text_message">The entire text of the message</p>
+                    <p id="text_message"></p>
                 </div>
                     <div class="message_icons">
                         <button id="remove"><img src="./images/icons/mail_remove.svg" alt="remove_icon" width="30px"></button>
@@ -62,11 +60,11 @@
         <form action="" class="send_form">    
             <input type="text" name="" id="title_send_msg" placeholder="Type message title"><br>
             <textarea name="" id="msg_send_text" cols="30" rows="10" placeholder="Type message text"></textarea><br>
-            <button id="send_send_form">Send</button>
+            <button id="send_send_form" type="submit">Send</button>
             
         </form>
     </div>
 
-    <script src="./js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
